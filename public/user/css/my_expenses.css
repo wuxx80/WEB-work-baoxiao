@@ -1,0 +1,181 @@
+/* 我的报销列表样式 - 优化版 */
+
+/* 搜索面板样式 */
+.search-panel {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.search-form .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px;
+}
+
+.search-form .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.search-form input,
+.search-form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.search-form .btn {
+    padding: 10px 25px;
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.search-form .btn:hover {
+    background-color: #303f9f;
+}
+
+/* 表格面板样式 */
+.table-panel {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    overflow: hidden; /* 防止表格溢出 */
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.data-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.data-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* 状态标签样式 */
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.status-pending {
+    background-color: #ff9800; /* 橙色 */
+}
+
+.status-approved {
+    background-color: #4CAF50; /* 绿色 */
+}
+
+.status-rejected {
+    background-color: #f44336; /* 红色 */
+}
+
+.btn-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.no-data {
+    text-align: center;
+    color: #888;
+    padding: 20px !important;
+}
+
+/* 新增：表格内筛选下拉框样式 */
+.data-table th select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 0.9em;
+    font-weight: normal;
+    background-color: #fff;
+}
+/* 报销单详情页样式 */
+.expense-detail-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.detail-section {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.detail-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.detail-section h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #3f51b5;
+    margin-bottom: 15px;
+}
+
+.detail-row {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #555;
+    flex-basis: 120px;
+    flex-shrink: 0;
+}
+
+.detail-value {
+    color: #333;
+}

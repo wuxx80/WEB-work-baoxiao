@@ -1,0 +1,248 @@
+/* forms.css */
+
+body /* 背景图地址 */{
+    background-image: url('https://placehold.co/1920x1080/EFEFEF/969696?text=Background+Image'); /* Placeholder for a login page background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 10px auto; /* Further reduced margin */
+    padding: 10px; /* Further reduced padding */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background for better readability */
+    border-radius: 6px; /* Slightly smaller border-radius */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Lighter shadow */
+}
+
+.form-section {
+    background-color: #f9f9f9;
+    padding: 10px; /* Further reduced padding */
+    border-radius: 6px;
+    margin-bottom: 10px; /* Further reduced margin */
+}
+
+.form-section h3 {
+    margin-top: 0;
+    margin-bottom: 8px; /* Further reduced margin */
+    color: #555;
+    border-bottom: 1px solid #ddd; /* Thinner border */
+    padding-bottom: 5px;
+}
+
+.form-group {
+    margin-bottom: 8px; /* Further reduced margin */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 3px; /* Reduced margin */
+    font-weight: bold;
+    color: #444;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 6px; /* Further reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 3px; /* Smaller border-radius */
+    box-sizing: border-box;
+    font-size: 13px; /* Reduced font size */
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #3f51b5;
+    outline: none;
+}
+
+.form-actions {
+    text-align: right;
+    margin-top: 10px; /* Further reduced margin */
+}
+
+.btn {
+    padding: 6px 12px; /* Further reduced padding */
+    border: none;
+    border-radius: 3px;
+    font-size: 13px; /* Reduced font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+    background-color: #3f51b5;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #5c6bc0;
+    transform: translateY(-1px); /* Less dramatic effect */
+}
+
+.btn-secondary {
+    background-color: #9e9e9e;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #757575;
+}
+
+.btn-danger {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #d32f2f;
+}
+
+/* New: Flexbox container for total amount and submit button */
+.form-actions-flex {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    gap: 20px; /* Space between the two elements */
+    margin-top: 15px;
+}
+
+/* Updated styles for a grid of expense items */
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjusted min-width for tighter layout */
+    gap: 8px; /* Further reduced grid gap */
+    margin-bottom: 8px; /* Further reduced margin */
+}
+
+/* Dynamic expense item style */
+.expense-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 6px; /* Further reduced padding */
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Lighter shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.expense-item:hover {
+    transform: translateY(-2px); /* Less dramatic effect */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.remove-item-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 4px 8px; /* Smaller button */
+    font-size: 10px; /* Smaller font */
+}
+
+.form-row {
+    display: flex;
+    gap: 10px; /* Reduced gap */
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-row-flex {
+    display: flex;
+    justify-content: center; /* Center alignment */
+    gap: 15px; /* Reduced gap */
+    align-items: center;
+    margin-bottom: 10px; /* Further reduced margin */
+}
+
+.flex-item {
+    flex: 1;
+    max-width: 350px; /* Reduced max width */
+    min-width: 200px; /* Reduced min width */
+}
+
+.total-amount {
+    text-align: right;
+    font-size: 0.9em; /* Reduced font size */
+    font-weight: bold;
+    color: #3f51b5;
+    margin: 0; /* Remove margin to let flexbox handle spacing */
+    padding: 0;
+}
+
+.total-amount #total-amount-display {
+    font-size: 1.1em; /* Reduced font size */
+    color: #4CAF50;
+}
+
+/*--- Login Page Specific Styles ---*/
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: transparent; /* Remove the background color here to let the body background show */
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background for the box */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-title {
+    margin-bottom: 25px;
+    color: #3f51b5;
+    font-size: 1.5em;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f51b5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #5c6bc0;
+    transform: translateY(-2px);
+}
+
+.link-container {
+    margin-top: 20px;
+}
+
+.link-secondary {
+    color: #3f51b5;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.link-secondary:hover {
+    color: #5c6bc0;
+    text-decoration: underline;
+}

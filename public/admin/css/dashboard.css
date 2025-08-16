@@ -1,0 +1,325 @@
+/* 后台管理页面布局和组件样式 */
+.main-header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.main-header nav a {
+    color: #fff;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.main-header nav a:hover, .main-header nav a.active {
+    background-color: #495057;
+    text-decoration: none;
+}
+
+.user-info {
+    font-size: 14px;
+}
+
+.user-info a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+/* 登录页面样式 */
+.login-container {
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+/* 报销列表和详情页面 */
+.list-tabs {
+    margin-bottom: 20px;
+}
+
+.list-tabs a {
+    padding: 10px 15px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    background-color: #f0f0f0;
+    color: #555;
+    font-weight: bold;
+}
+
+.list-tabs a.active {
+    background-color: #fff;
+    border-color: #ddd;
+    border-bottom: 1px solid #fff;
+    color: #000;
+}
+
+.expense-detail-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.expense-detail-card h3 {
+    margin-top: 0;
+}
+
+.expense-detail-card p {
+    margin: 5px 0;
+}
+
+.status-pending {
+    color: #ffc107;
+    font-weight: bold;
+}
+.status-approved {
+    color: #28a745;
+    font-weight: bold;
+}
+.status-rejected {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+.action-buttons button, .action-buttons form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-approve {
+    background-color: #28a745;
+}
+
+.btn-reject {
+    background-color: #dc3545;
+}
+
+.btn-reject-submit {
+    background-color: #007bff;
+}
+
+.btn-cancel {
+    background-color: #6c757d;
+}
+
+/* --- 用户管理页面样式 --- */
+.add-form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.add-form-container h3 {
+    margin-top: 0;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row input, .form-row select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-add, .btn-edit, .btn-delete, .btn-save {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-add {
+    background-color: #28a745;
+    margin-top: 10px;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-save {
+    background-color: #007bff;
+    margin-top: 20px;
+}
+
+/* --- 模态框样式 --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 400px;
+    position: relative;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover, .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* --- 数据管理和维护页面样式 --- */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.filter-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-form select, .filter-form input[type="date"] {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-primary, .btn-secondary, .btn-danger {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.table-actions {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.maintenance-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.maintenance-item {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+}
